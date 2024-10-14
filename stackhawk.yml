@@ -1,6 +1,6 @@
 app:
-  applicationId: ${1cd6f87e-111b-4138-ac37-b2161f48faad}
-  env: ${APP_ENV:Development}
+  applicationId: 1cd6f87e-111b-4138-ac37-b2161f48faad
+  env: ${APP_ENV:Pre-Production}
   host: ${APP_HOST:https://localhost:9000}
   waitForAppTarget:
     path: /
