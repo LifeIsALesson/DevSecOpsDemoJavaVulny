@@ -2,10 +2,8 @@
 name: StackHawk Actions
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
   pull_request:
-    branches: [main]
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
    
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -21,9 +19,10 @@ jobs:
         uses: actions/checkout@v2
       
       - name: Set up Docker
-        uses: docker-practice/actions-setup-docker@v1
+        uses: docker-practice/actions-setup-docker@master
         with:
-         docker_version: '20.10.7'
+         docker_version: "24.0"
+          
       # Next, the action builds and runs the Javaspringvulny application in a Docker container
       - name: Build and Run Vulny!
         run: docker-compose build && docker-compose up -d
