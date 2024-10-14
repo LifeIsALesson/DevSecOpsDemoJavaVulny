@@ -28,7 +28,7 @@ dependencies {
     implementation("io.jsonwebtoken:jjwt-api:0.10.7")
     implementation("org.apache.logging.log4j:log4j-slf4j-impl:2.14.1")
 
-    implementation("org.springdoc:springdoc-openapi-ui:1.2.32")
+    implementation("org.springdoc:springdoc-openapi-ui:1.8.0")
 
     testCompileOnly("junit:junit")
 
