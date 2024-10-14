@@ -4,7 +4,7 @@ plugins {
     java
     idea
     distribution
-    id("org.springframework.boot") version "2.1.6.RELEASE"
+    id("org.springframework.boot") version "3.3.4"
 }
 apply(plugin = "io.spring.dependency-management")
 
