@@ -11,8 +11,8 @@ jobs:
   # This is the job of running the Javaspringvulny application and then running HawkScan to test it
   stackhawk-hawkscan:
     # This is the OS we chose to run the project on
-    #runs-on: ubuntu-latest
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
+    #runs-on: ubuntu-22.04
 
     # These are the sequential steps for running the action
     steps:
@@ -28,6 +28,11 @@ jobs:
       # Next, the action builds and runs the Javaspringvulny application in a Docker container
       #- name: Build and Run Vulny!
       #  run: docker compose build && docker compose up -d
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
 
       - name: Build and run JavaSpringVulny (slower)
         run: |
