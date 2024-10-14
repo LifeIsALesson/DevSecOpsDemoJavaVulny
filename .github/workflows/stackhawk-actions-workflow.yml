@@ -19,6 +19,11 @@ jobs:
       # First, the action checks out the repo to get the latest version
       - name: Check out Repo!
         uses: actions/checkout@v2
+      
+      - name: Set up Docker
+        uses: docker-practice/actions-setup-docker@v1
+        with:
+         docker_version: '20.10.7'
       # Next, the action builds and runs the Javaspringvulny application in a Docker container
       - name: Build and Run Vulny!
         run: docker-compose build && docker-compose up -d
