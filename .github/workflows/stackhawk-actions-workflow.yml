@@ -11,8 +11,8 @@ jobs:
   # This is the job of running the Javaspringvulny application and then running HawkScan to test it
   stackhawk-hawkscan:
     # This is the OS we chose to run the project on
-    #runs-on: ubuntu-latest
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
+
     # These are the sequential steps for running the action
     steps:
       # First, the action checks out the repo to get the latest version
