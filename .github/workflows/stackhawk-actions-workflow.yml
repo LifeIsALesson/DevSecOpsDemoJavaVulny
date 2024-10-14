@@ -22,7 +22,7 @@ jobs:
       - name: Set up Docker
         uses: docker-practice/actions-setup-docker@master
         with:
-         docker_version: "20.10"
+         docker_version: "23.0"
           
       # Next, the action builds and runs the Javaspringvulny application in a Docker container
       - name: Build and Run Vulny!
