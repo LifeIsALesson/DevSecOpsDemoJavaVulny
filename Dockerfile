@@ -1,4 +1,5 @@
-FROM openjdk:11.0-jdk-slim
+# FROM openjdk:11.0-jdk-slim
+FROM openjdk:24-ea-19-jdk-slim-bookworm
 
 RUN mkdir /javavulny /app
 COPY . /javavulny/
