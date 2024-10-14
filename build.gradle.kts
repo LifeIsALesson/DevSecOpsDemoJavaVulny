@@ -32,7 +32,7 @@ dependencies {
 
     testCompileOnly("junit:junit")
 
-    implementation("io.jsonwebtoken:jjwt-impl:0.10.7")
+    implementation("io.jsonwebtoken:jjwt-impl:0.12.6")
     implementation("io.jsonwebtoken:jjwt-jackson:0.10.7")
     implementation("io.resurface:resurfaceio-logger:2.2.0")
 
